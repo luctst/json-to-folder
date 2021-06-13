@@ -1,4 +1,5 @@
 {
+	"type": "module",
 	"name": "json-to-folder",
 	"version": "1.0.0",
 	"description": "Create folder by parsing json file",
@@ -44,6 +45,9 @@
 		"prettier": "^2.3.1"
 	},
 	"dependencies": {
-		"meow": "^10.0.1"
+		"chalk": "^4.1.1",
+		"meow": "^10.0.1",
+		"redent": "^4.0.0",
+		"trim-newlines": "^4.0.2"
 	}
 }
