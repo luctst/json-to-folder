@@ -5,6 +5,9 @@
 	"description": "Create folder by parsing json file",
 	"main": "lib/bin.js",
 	"bin": "lib/cli.js",
+	"files": [
+		"lib/"
+	],
 	"author": "luctst",
 	"license": "MIT",
 	"repository": {
