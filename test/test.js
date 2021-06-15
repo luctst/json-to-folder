@@ -41,7 +41,7 @@ test('All commands are imported', function (t) {
     )
 });
 
-test.skip('All commands are well formated', function (t) {
+test('All commands are well formated', function (t) {
     const mustHave = {
         data: {
             helper: 'string',
@@ -57,7 +57,31 @@ test.skip('All commands are well formated', function (t) {
 
             if (!cmdKey.includes(mustHaveKey)) return t.fail(`Command ${commands[cmd]} is missing ${mustHaveKey} key`);
 
-            if (typeof mustHave[mustHaveKey] === 'object') {}
+            if (typeof mustHave[mustHaveKey] === 'object') {
+                if (typeof commands[cmd][mustHaveKey] !== 'object') {
+                    return t.fail(`Command key ${commands[cmd][mustHaveKey]} must be an object`);
+                }
+
+                const subKeys = Object.keys(mustHave[mustHaveKey]);
+                const subCommandKeys = Object.keys(commands[cmd][mustHaveKey]);
+
+                subKeys.forEach(function (k) {
+                    if (!subCommandKeys.includes(k)) {
+                        return t.fail(`${k} key is missing in ${commands[cmd][mustHaveKey]} field`);
+                    }
+
+                    t.is(
+                        typeof commands[cmd][mustHaveKey][k],
+                        mustHave[mustHaveKey][k],
+                    );
+                })
+            } else {
+                t.is(
+                    typeof commands[cmd][mustHaveKey],
+                    mustHave[mustHaveKey],
+                    `${mustHaveKey}`
+                );
+            }
         });
     });
 
