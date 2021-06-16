@@ -29,7 +29,6 @@
 
 * [Features](##features)
 * [Usage](##usage)
-* [Exemples](##exemples)
 * [Contributing](##contributing)
 * [Maintainers](##maintainers)
 
@@ -45,11 +44,6 @@ npx json-to-folder <command> [options]
   * *Create* [options]  Create the folder based on json file data, if no path is defined with the `-p` flag folder will be created with `process.cwd()`.
 
 > **Note** Enter `npx json-to-folder --help` for more informations.
-
-## Exemples 🖍
-```
-Show some code
-```
 
 ## Contributing 🍰
 Please make sure to read the [Contributing Guide](https://github.com/luctst/json-to-folder/blob/master/.github/CONTRIBUTING.md) before making a pull request.
