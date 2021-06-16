@@ -1,6 +1,6 @@
-./.github/
-./.test/
-./.eslintrc.json
-./.prettierignore
-./.prettierrc.json
-./.travis.yml
+.github/
+.test/
+.eslintrc.json
+.prettierignore
+.prettierrc.json
+.travis.yml

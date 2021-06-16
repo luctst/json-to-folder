@@ -1,13 +1,10 @@
 {
 	"type": "module",
 	"name": "json-to-folder",
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"description": "Create folder by parsing json file",
 	"main": "lib/bin.js",
 	"bin": "lib/bin.js",
-	"files": [
-		"./lib/**/*"
-	],
 	"author": "luctst",
 	"license": "MIT",
 	"repository": {
