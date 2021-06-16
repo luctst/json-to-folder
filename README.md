@@ -52,7 +52,7 @@ Show some code
 ```
 
 ## Contributing 🍰
-Please make sure to read the [Contributing Guide]() before making a pull request.
+Please make sure to read the [Contributing Guide](https://github.com/luctst/json-to-folder/blob/master/.github/CONTRIBUTING.md) before making a pull request.
 
 Thank you to all the people who already contributed to this project!
 

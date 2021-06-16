@@ -4,9 +4,9 @@
 	"version": "1.0.0",
 	"description": "Create folder by parsing json file",
 	"main": "lib/bin.js",
-	"bin": "lib/cli.js",
+	"bin": "lib/bin.js",
 	"files": [
-		"lib/"
+		"./lib/**/*"
 	],
 	"author": "luctst",
 	"license": "MIT",
@@ -27,7 +27,21 @@
 	"ava": {
 		"cache": true
 	},
-	"keywords": [],
+	"keywords": [
+		"cli",
+		"bin",
+		"util",
+		"utility",
+		"helper",
+		"command",
+		"line",
+		"parser",
+		"option",
+		"flags",
+		"input",
+		"cmd",
+		"console"
+	],
 	"scripts": {
 		"test": "ava --verbose ./test/*.js",
 		"test:watch": "ava --watch --verbose --fail-fast ./test/*.js",
